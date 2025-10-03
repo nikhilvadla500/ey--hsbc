@@ -19,7 +19,7 @@ resource "google_container_cluster" "gke_cluster1" {
   logging_service       = "logging.googleapis.com/kubernetes"
   monitoring_service    = "monitoring.googleapis.com/kubernetes"
 
-  # Reuse existing network + subnet
+  
   network    = google_compute_network.vpc_network.name
   subnetwork = google_compute_subnetwork.subnetwork.name
 
