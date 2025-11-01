@@ -25,7 +25,7 @@ resource "google_container_cluster" "gke_cluster1" {
 
   node_pool {
     name       = "hsbc-pool"
-    node_count = 1
+    node_count = 2
 
     autoscaling {
       min_node_count = 1
